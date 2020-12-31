@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body, html
   {
       margin-top: 0;
@@ -13,6 +16,33 @@ footer
       bottom: 0;
       width: 100%;
   }
+.titulo
+  {
+
+      text-align: center;
+      margin-top: 60px;
+  }
+.centro
+  {
+      float: left;
+      width: 60%;
+      padding: 0 20px;
+  }
+.izq
+  {
+      float:left;
+      width:20%;
+      text-align:center;
+  }
+  .manchas{width: 50%;height: 50%;}
+.der
+  {
+      float:left;
+      width:20%;
+      padding:15px;
+      margin-top:7px;
+      text-align:center;
+  }
 .menu
   {
       float:right;
@@ -20,12 +50,7 @@ footer
       text-align:center;
   }
 
-h1
-  {
 
-      text-align: center;
-      margin-top: 55px;
-  }
 
 .footr  ul, li
   {
@@ -43,7 +68,7 @@ nav
       width: 100%;
       margin: 0;
   }
-img
+.logo
   {
       float:left;
       height: 30px;
