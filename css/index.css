@@ -1,12 +1,18 @@
+:after, :before
+{
+    box-sizing: border-box;
+}
 * {
   box-sizing: border-box;
 }
 body, html
   {
-      margin-top: 0;
-      padding: 0;
-      background-color: black;
-      color: #6D6B6A;
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    margin-top: 0;
+    padding: 0;
+    background-color: black;
+    color: #6D6B6A;
   }
 footer
   {
@@ -49,36 +55,37 @@ h2, h1, h3, h4, h5, h6
   .txt-centro
   {
     text-align: center;
-    color: black;
+
     margin-bottom: 30px;
   }
 .bg-grey
   {
     background-color: gray;
   }
-.contenedor-fluido
+.cont-fluid
   {
-    padding: 50px 50px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 10px 50px;
+
   }
-  .contenedor-fluido
+  .cont-fluid:after, .cont-fluid:before, .row:after, .row:before, .form-group:after, .form-group-:before
+    {
+      display: table;
+      content: " ";
+    }
+  :after, :before
+    {
+      box-sizing: border-box;
+    }
+.row:after,.cont-fluid:after
   {
-
-
+    clear: both;
   }
 .row
   {
     margin-right: -15px;
     margin-left: -15px;
   }
-.row::after .row::before
-  {
-    display: table;
-    content: " ";
-  }
+
 .form-group
   {
         margin-bottom: 15px;
@@ -97,40 +104,40 @@ h2, h1, h3, h4, h5, h6
   }
 textarea.form-control
   {
-
     height: auto;
   }
+  .carousel {
+      position: relative;
+  }
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.slide
+{
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
 .btn-right
   {
     float: right!important;
   }
 .titulo
   {
-
       text-align: center;
       margin-top: 60px;
   }
-.centro
-  {
-      float: left;
-      width: 60%;
-      padding: 0 20px;
-  }
-.izq
-  {
-      float:left;
-      width:20%;
-      text-align:center;
-  }
-  .manchas{width: 50%;height: 50%;}
-.der
-  {
-      float:left;
-      width:20%;
-      padding:15px;
-      margin-top:7px;
-      text-align:center;
-  }
+
 .menu
   {
       float:right;
@@ -188,7 +195,6 @@ a:focus
   }
 .copy
   {
-
       color: white;
       float: right;
       width: 200px;
