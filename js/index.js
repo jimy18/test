@@ -7,7 +7,8 @@ menu=
       {"uno":"NOSOTROS","link":"#about"},
       {"uno":"EQUIPO","link":"#continuamos"},
       {"uno":"SERVICIOS","link":"#servicios"},
-      {"uno":"CONTACTANOS","link":"#contacto"}
+      {"uno":"CONTACTANOS","link":"#contacto"},
+      {"uno":"BOLSA DE TRABAJO", "link":"#"}
 ]
 //creamos una condicion donde mientras i sea igual al contenido de menu.menus
 for ( i in menu)
