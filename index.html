@@ -5,20 +5,19 @@
       <link rel="stylesheet" href="css/index.css">
       <meta charset="utf-8">
       <title>Home</title>
-      <div id="menu" >
+    <!--  <div id="menu" >-->
           <nav class="navbar ">
               <a><img src="img/dainise.png" class="logo" alt=""></a>
                 <ul id="nav" >
-
                 </ul>
           </nav>
-      </div>
+    <!--  </div>-->
     </head>
     <body>
 
               <h1 class="titulo">ESTO ES UNA PRUEBA</h1>
-              <div id="about" class=" bg-grey cont-fluid">
-                  <div class="row">
+              <div id="about" class=" row bg-grey cont-fluid">
+
                       <div class="col-sm-8 ">
                         <h2>¿quienes somos?</h2>
                         <h4>El sistema de control de versiones git, ofrece una solución muy conveniente a
@@ -40,13 +39,13 @@
                       <div class="col-sm-4 ">
                           <img src="img/git.png" alt="git" >
                       </div>
-                  </div>
+
               </div>
 
 
-              <div class="cont-fluid">
+              <div class=" row cont-fluid">
 
-                <div class="row">
+
                   <div class="col-sm-4">
                     <img src="img/git2.png" alt="git2"width="60%" height="60%">
                   </div>
@@ -60,7 +59,7 @@
                         Ahora dentro de esta rama creamos un nuevo archivo llamado index.html con el siguiente código</p>
                         <br>
                   </div>
-                </div>
+
               </div>
 
               <div id="servicios" class="cont-fluid txt-centro bg-grey">
@@ -109,10 +108,7 @@
                   <ol class="carousel-indicators">
                     <li #mycarousel></li>
                   </ol>
-
-
                 </div>
-
               </div>
 
 
@@ -126,21 +122,31 @@
                               <p>contacto@contacto.com</p>
                           </div>
                           <div class="col-sm-7">
-                              <div class="row">
+
                                   <div class="col-sm-6 form-group">
                                       <input class="form-control" type="text" name="nombre" placeholder="Nombre" required>
                                   </div>
                                   <div class="col-sm-6 form-group">
                                       <input class="form-control" type="text" name="inapellidos" placeholder="Apellidos" required>
                                   </div>
-                              </div>
-                              <input class="form-control" type="text" name="inemail" placeholder="CORREO@PROVEEDOR.COM">
+                                  <div class=" col-sm-6 form-group">
+                                    <input class="form-control" type="text" name="inemail" placeholder="CORREO@PROVEEDOR.COM">
+                                  </div>
+                                  <div class=" col-sm-6 form-group">
+                                    <select class="" name="genero">
+                                        <option value="estudiante">Estudiante</option>
+                                        <option value="maestro">Maestro</option>
+                                        <option value="empleado">Empleado</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                  </div>
+
                                 <br>
                               <textarea class="form-control" placeholder="Comentarios" name="incoment" rows="5"></textarea>
                               <div class="row">
                                   <div class="col-sm-12 form-group">
-                                                            <button type="button" name="send" class="btn-right" class="snd">Enviar</button>
-                                                        </div>
+                                        <button type="button" name="send" class="btn-right" class="snd">Enviar</button>
+                                  </div>
                               </div>
                           </div>
                     </div>
