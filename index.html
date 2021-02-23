@@ -15,7 +15,7 @@
     </head>
     <body>
 
-              <h1 class="titulo">ESTO ES UNA PRUEBA</h1>
+              <h1 class="titulo">ESTO ES UNA PRUEBA  </h1>
               <div id="about" class=" row bg-grey cont-fluid">
 
                       <div class="col-sm-8 ">
@@ -37,7 +37,7 @@
                              la rama master con</p>
                       </div>
                       <div class="col-sm-4 ">
-                          <img src="img/git.png" alt="git" >
+                          <img src="img/git.png" alt="git" width="90%"  >
                       </div>
 
               </div>
@@ -114,7 +114,7 @@
 
               <div id="contacto" class="cont-fluid bg-grey ">
                   <h2 class="txt-centro">contacto</h2>
-                    <div class="row">
+                    <form class="row">
                           <div class="col-sm-5">
                               <p>Contactanos, te responderemos en menos de 24 horas</p>
                               <p>Mexico City </p>
@@ -124,17 +124,19 @@
                           <div class="col-sm-7">
 
                                   <div class="col-sm-6 form-group">
-                                      <input class="form-control" type="text" name="nombre" placeholder="Nombre" required>
+                                      <input id="name" class="form-control" type="text" name="nombre" placeholder="Nombre" required>
+                                      <p id="pn"></p>
                                   </div>
                                   <div class="col-sm-6 form-group">
-                                      <input class="form-control" type="text" name="inapellidos" placeholder="Apellidos" required>
+                                      <input id="last" class="form-control" type="text" name="inapellidos" placeholder="Apellidos" required>
                                   </div>
                                   <div class=" col-sm-6 form-group">
-                                    <input class="form-control" type="text" name="inemail" placeholder="CORREO@PROVEEDOR.COM">
+                                    <input id="email" class="form-control" type="email" name="inemail" placeholder="CORREO@PROVEEDOR.COM" required>
+                                    <p id="emailOK"></p>
                                   </div>
                                   <div class=" col-sm-6 form-group">
                                     <select class="" name="genero">
-                                        <option value="estudiante">Estudiante</option>
+                                        <option value="estudiante" selected>Estudiante</option>
                                         <option value="maestro">Maestro</option>
                                         <option value="empleado">Empleado</option>
                                         <option value="otro">Otro</option>
@@ -144,18 +146,24 @@
                                 <br>
                               <textarea class="form-control" placeholder="Comentarios" name="incoment" rows="5"></textarea>
                               <div class="row">
-                                  <div class="col-sm-12 form-group">
-                                        <button type="button" name="send" class="btn-right" class="snd">Enviar</button>
+                                <div class="col-sm-6 form-group">
+                                  <input type="file" name="file" class="file" value="">
+                                </div>
+                                  <div class="col-sm-6 form-group">
+                                        <button type="button" name="send" class="btn-right" onclick="mensaje()" >Enviar</button>
                                   </div>
+
                               </div>
                           </div>
-                    </div>
+                    </form>
               </div>
 <br>
 
           <footer class="copy" >
                     <p>© Copyright Adan Cortes</p>
           </footer>
+          <script type="text/javascript" src="js/error.js"></script>
               <script type="text/javascript" src="js/menu.js"></script>
+              <script type="text/javascript" src="js/error-correo.js"></script>
     </body>
 </html>
