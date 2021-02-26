@@ -20,6 +20,10 @@ footer
       width: 100%;
       height: 30px;
   }
+#emailOK
+  {
+    color: red;
+  }
 .copy p
   {
     color: white;
@@ -38,7 +42,8 @@ footer
         border-radius: 5px;
         height: 37px;
     }
- ul, li
+
+ul, li
     {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -122,12 +127,12 @@ h2, h1, h3, h4, h5, h6
     padding: 15px 20px;
 
   }
-  .cont-fluid:after, .cont-fluid:before, .row:after, .row:before, .form-group:after, .form-group-:before
+.cont-fluid:after, .cont-fluid:before, .row:after, .row:before, .form-group:after, .form-group-:before
     {
       display: table;
       content: " ";
     }
-  :after, :before
+:after, :before
     {
       box-sizing: border-box;
     }
