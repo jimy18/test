@@ -24,6 +24,13 @@ footer
   {
     color: red;
   }
+#contacto
+  {
+    color:blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: justify;
+  }
 .copy p
   {
     color: white;
