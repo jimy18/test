@@ -1,3 +1,4 @@
+"use strict;"
 var menu, i, x="";
 menu=
 [
@@ -15,7 +16,7 @@ for ( i in menu)
 {
       //x = document.createElement("LI");
       x=document.createElement("a");
-      //asignamos a la variable tel contenido de menu.menus.uno dependiendo el lugar en el que se encuentr la variable i
+      //asignamos a la variable del contenido de menu.menus.uno dependiendo el lugar en el que se encuentr la variable i
       var t = document.createTextNode(menu[i].tit);
       //referenciamos el nombre link a la variable x con el nombre que sigue despues de link
       x.href = (menu[i].link)

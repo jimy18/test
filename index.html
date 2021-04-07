@@ -103,6 +103,7 @@
               </div>
 
               <div class="cont-fluid txt-centro">
+
                 <h2>que dicen de nosotros</h2>
                 <div class="carousel slide txt-centro" data-ride="carousel">
                   <ol class="carousel-indicators">
@@ -117,18 +118,20 @@
                     <form class="row" id="contacto">
                           <div class="col-sm-5">
                               <p>Contactanos, te responderemos en menos de 24 horas</p>
-                              <p>Mexico City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;55-51-52-53-54  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  contacto@contacto.com</p>
+                              <p>Mexico City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;55-51-52-53-54  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  contacto@contacto.com</p>
                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60145.80821372716!2d-99.15699395551881!3d19.579658390375315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f6decf436c73%3A0xaa688731b3fd484a!2sAm%C3%A9rica%20del%20Norte!5e0!3m2!1ses-419!2smx!4v1615842648370!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                           </div>
                           <div class="col-sm-7">
 
-                                  <div class="col-sm-6 form-group">
-                                      <input id="name" class="form-control" type="text" name="nombre" placeholder="Nombre" required>
-
-                                  </div>
-                                  <div class="col-sm-6 form-group">
-                                      <input id="last" class="form-control" type="text" name="inapellidos" placeholder="Apellidos" required>
-                                  </div>
+                                <div class="col-sm-6 form-group">
+                                    <input id="name" class="form-control" onfocusout="validar()" type="text" name="nombre" placeholder="Nombre" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input id="last" class="form-control" onfocusout="validar()" type="text" name="inapellidos" placeholder="Apellidos" required>
+                                </div>
+                                <div class="" >
+                                  <p id="pn"></p>
+                                </div>
 
                                   <div class=" col-sm-6 form-group">
                                     <input id="email" class="form-control" type="email" name="inemail" placeholder="CORREO@PROVEEDOR.COM" required>
@@ -162,8 +165,9 @@
           <footer class="copy" >
                     <p>© Copyright Adan Cortes</p>
           </footer>
-             
+
               <script type="text/javascript" src="js/menu.js"></script>
               <script type="text/javascript" src="js/error-correo.js"></script>
+              <script type="text/javascript" src="js/error.js"></script>
     </body>
 </html>
